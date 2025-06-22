@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerBuddy</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header>
+      <h1>CareerBuddy</h1>
+      <p>Your personal career assistant</p>
+      <button id="darkToggle" class="dark-toggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <main id="messages"></main>
+
+    <!-- Loading Spinner -->
+    <div id="loading" style="display: none;">
+      <div class="spinner">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <!-- Quick Suggestion Chips -->
+    <div class="suggestions">
+      <button class="chip">Best careers for AI/ML</button>
+      <button class="chip">Top skills for 2025</button>
+      <button class="chip">Courses to learn React</button>
+      <button class="chip">Skills to become a Data Scientist</button>
+      <button class="chip">Intermediate Roadmap</button>
+      <button class="chip">Btech Roadmap</button>
+    </div>
+
+    <!-- ✅ Chat Footer -->
+    <footer id="chat-footer">
+      <button id="micBtn" class="circle-button" title="Voice Input">
+        <i class="fas fa-microphone"></i>
+      </button>
+
+      <input type="text" id="input" placeholder="Ask CareerBuddy..." />
+
+      <button id="toggleBtn" class="circle-button" title="Send">
+        <span id="btnIcon">&#8593;</span>
+      </button>
+
+      <button id="speakBtn" class="circle-button" title="Listen Response">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </footer>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
